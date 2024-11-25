@@ -1,0 +1,141 @@
+/* Footer Styling */
+.footer {
+    background-color: #000000;
+    border-radius: 15px;
+    width: 80%;
+    padding: 9px;
+    color: #ecf0f1;
+    font-family: 'Arial', sans-serif;
+    margin: 4px auto;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Footer Title Styling */
+
+
+/* Footer Sections */
+.footer-sections {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+/* Footer Section Styling */
+.footer-section {
+    max-width: 280px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Section Title Styling */
+.section-title {
+    font-size: 1.6rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+/* Footer Links Styling */
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-weight: 500;
+}
+
+.footer-section ul li a:hover {
+    color: #000000;
+    transform: translateX(5px);
+}
+
+/* Social Icons Styling */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    font-size: 2.5rem;
+    color: #8e9091;
+    transition: transform 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+    opacity: 0.7;
+}
+
+.social-icons a:hover {
+    color: #000000;
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+/* Copyright Section Styling */
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.1rem;
+    color: #bdc3c7;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.copyright p {
+    margin: 0;
+}
+
+/* Hover Effect: Footer background turns white */
+.footer:hover {
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+.footer:hover .footer-title,
+.footer:hover .section-title,
+.footer:hover .footer-section ul li a,
+.footer:hover .copyright p {
+    color: #000000;
+}
+
+/* Hover effect for footer links */
+.footer:hover .footer-section ul li a:hover {
+    color: #f39c12;
+}
+
+/* Subtle animation for the footer title */
+@keyframes fadeInTitle {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.footer-title {
+    animation: fadeInTitle 1s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-sections {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .footer-section {
+        text-align: center;
+        max-width: 100%;
+    }
+}

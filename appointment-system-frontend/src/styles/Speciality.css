@@ -1,0 +1,106 @@
+/* Style for the image */
+.image {
+    width: 500px;
+    max-width: 500px; /* Sets a maximum width for larger screens */
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the image */
+.image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .image {
+        max-width: 80%; /* Adjusts the width on smaller screens */
+        margin-bottom: 15px;
+    }
+}
+
+
+/* Container for the doctor specialty section */
+.doctor-container {
+    display: flex;
+    gap: 90px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 20px;
+    width: 85%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+/* Hover effect for the container */
+.doctor-container:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* List container */
+.specialty-list-container {
+    width: 1%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* List Styling */
+.speciality-list {
+    list-style: none;
+    display: flex;
+    margin-left: 1px;
+    padding-left: 10px;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+}
+
+/* Styling for each list item */
+.speciality-list li {
+    font-size:20px;
+    font-weight: 100;
+    padding: 9px 10px;
+    color: #000000;
+    margin: 10px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for list items */
+.speciality-list li:hover {
+    transform: translateY(-7px);
+    background: linear-gradient(135deg, #000000, #000000);
+    color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for each line of specialties */
+.specialty-lines {
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    flex-wrap: wrap;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .speciality-list li {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+
+    .doctor-container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+}

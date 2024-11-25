@@ -1,0 +1,145 @@
+/* General styling for the doctor list container */
+.doctor-list-container {
+    padding: 2px;
+    background-color: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Main header for doctor list */
+  .heading {
+    font-size: 2.8rem;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+  }
+  
+  /* Styling for the doctor list */
+  .doctor-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    margin-bottom: 50px;
+  }
+  
+  /* Styling for the individual doctor cards */
+  .doctor-card {
+    background-color: rgb(251, 251, 251);
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 340px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .doctor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 76px 82px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Styling for the doctor's image */
+  .doctor-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+  
+  .doctor-card:hover .doctor-img {
+    transform: scale(1.15);
+  }
+  
+  /* Styling for the doctor details section */
+  .doctor-details {
+    padding: 25px;
+  }
+  
+  .doctor-name {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin: 10px 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .doctor-specialty {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 12px;
+  }
+  
+  .doctor-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .doctor-rating {
+    font-size: 1rem;
+    color: #f39c12;
+  }
+  
+  .doctor-location {
+    font-size: 1rem;
+    color: #2c3e50;
+    font-weight: 500;
+  }
+
+  /* Add this to your CSS */
+.search-bar {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 46px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  
+  /* Styling for the "View Profile" button */
+  .doctor-profile-link {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #282b2d;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .doctor-profile-link:hover {
+    background-color: #d9dee3;
+    color: black;
+    transform: translateY(-5px);
+  }
+  
+  /* Mobile-friendly adjustments */
+  @media (max-width: 768px) {
+    .doctor-card {
+      max-width: 100%;
+    }
+  
+    .heading {
+      font-size: 2.3rem;
+    }
+  
+    .doctor-name {
+      font-size: 1.5rem;
+    }
+  
+    .doctor-specialty,
+    .doctor-info {
+      font-size: 1rem;
+    }
+  }
+  

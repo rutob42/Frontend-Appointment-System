@@ -1,0 +1,169 @@
+/* General Reset */
+
+
+
+
+.dashboard-container {
+    max-width: 1400px;
+    margin: 50px auto;
+    padding: 40px;
+    background: linear-gradient(135deg, #ffffff 20%, #ffffff 80%);
+    border-radius: 16px;
+    box-shadow: 10px 18px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Flexbox container */
+.dashboard-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Doctor Profile Section */
+.doctor-profile {
+    flex: 1;
+    min-width: 320px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.doctor-profile:hover {
+    box-shadow: 30px 20px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px) scale(1.01);
+}
+
+.doctor-profile h1 {
+    font-size: 2.8rem;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 25px;
+    letter-spacing: -0.5px;
+}
+
+.profile-info {
+    font-size: 1.2rem;
+    line-height: 1.75;
+}
+
+.profile-info p {
+    margin-bottom: 5px;
+    color: #252526;
+}
+
+.profile-info strong {
+    font-weight: bold;
+    color: #57585a;
+}
+
+.doctor-profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    object-fit: cover;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.doctor-profile img:hover {
+    transform: scale(1.1);
+}
+
+/* Appointments Section */
+.appointments-section {
+    flex: 1;
+    min-width: 320px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.appointments-section:hover {
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.255);
+    transform: translateY(-10px) scale(1.01);
+}
+
+.appointments-section h2 {
+    font-size: 2.4rem;
+    color: #000000;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.appointments-placeholder {
+    background-color: #d0d2d4;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.appointments-placeholder:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.appointments-placeholder p {
+    font-size: 1.4rem;
+    color: #718096;
+}
+
+/* Button */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    background-color: #000000;
+    color: white;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.button:active {
+    background-color: #2c5282;
+    transform: translateY(2px) scale(1);
+}
+
+/* Spinner */
+.spinner {
+    border: 5px solid #e5e7eb;
+    border-top: 5px solid #3182ce;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1.5s linear infinite;
+    margin: 50px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Error Message */
+.error-message {
+    text-align: center;
+    color: #e53e3e;
+    font-size: 1.6rem;
+    margin-top: 50px;
+}

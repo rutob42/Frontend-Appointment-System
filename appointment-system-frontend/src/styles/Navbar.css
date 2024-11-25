@@ -1,0 +1,76 @@
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 0;
+    background-color: #ffffff;  /* Optional: Add a background color for the navbar */
+    margin-top: 1px;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 0.01px;
+}
+
+.navbar-links li {
+    margin: 0;
+    position: relative;
+}
+
+.navbar-links a {
+    color: #9f3030;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    display: block;
+    border-radius: 8px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.navbar-links a:hover {
+    background-color: #000000;  /* Highlight color */
+    color: #ffffff;  /* White text on hover */
+    transform: translateY(-4px);  /* Slight upward movement */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  /* Adds subtle shadow */
+}
+
+.navbar-links li a {
+    color: #333333;  /* Default text color */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-links li a:hover {
+    transform: translateY(-5px);
+}
+
+.navbar-links li:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    transition: width 0.3s ease;
+}
+
+.navbar-links li:hover:before {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .navbar-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar-links a {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+}
